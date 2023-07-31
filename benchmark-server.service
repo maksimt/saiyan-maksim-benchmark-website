@@ -1,0 +1,11 @@
+[Unit]
+Description=Saiyan and maksim's benchmark website
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/maks/Saiyan
+ExecStart=/usr/bin/python3 -m http.server
+
+[Install]
+WantedBy=multi-user.target
